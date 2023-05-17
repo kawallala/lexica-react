@@ -1,0 +1,63 @@
+.lexica-image-container {
+  position: relative;
+}
+
+.lexica-image-buttons {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.lexica-image-button-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.lexica-image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.lexica-image-container:hover .lexica-image-overlay {
+  opacity: 1;
+}
+.lexica-image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.lexica-image-container:hover .lexica-image-text {
+  opacity: 1;
+}
+.lexica-image-buttons-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.lexica-image-container:hover .lexica-image-buttons {
+  display: block;
+}
+
+.lexica-image {
+  max-width: 100%;
+}
+
+.grid-item {
+  margin-bottom: 8px;
+}
