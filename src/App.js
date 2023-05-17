@@ -68,6 +68,18 @@ function App() {
           valueLabelDisplay="auto"
           min={1}
           max={12}
+          style={{ width: "30%" }}
+          sx={{
+            "& .MuiSlider-rail": {
+              backgroundColor: "gray",
+            },
+            "& .MuiSlider-track": {
+              backgroundColor: "gray",
+            },
+            "& .MuiSlider-thumb": {
+              backgroundColor: "gray",
+            },
+          }}
           onChange={(event, newValue) => setSliderValue(newValue)}
         />
         <div ref={gridRef} className="grid">
